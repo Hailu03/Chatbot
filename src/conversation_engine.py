@@ -127,7 +127,7 @@ def chat_interface(agent, chat_store, container):
     if len(st.session_state.chat_history) == 0:
         with container:
             with st.chat_message(name="assistant", avatar=professor_avatar):
-                st.markdown("Chào bạn, mình là Hailu Chat được phát triển bởi Hailu. Mình sẽ giúp bạn hiểu về cách ứng xử thông minh và cải thiện giao tiếp của bạn. Hãy bắt đầu bằng cách viết tin nhắn vào ô bên dưới nhé!")
+                st.markdown("Chào bạn, mình là HailuGPT được phát triển bởi Hailu. Mình sẽ giúp bạn hiểu về cách ứng xử thông minh và cải thiện giao tiếp của bạn. Hãy bắt đầu bằng cách viết tin nhắn vào ô bên dưới nhé!")
     
     # Accept user input
     prompt = st.chat_input("Viết tin nhắn tại đây ạ...")
