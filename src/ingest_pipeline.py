@@ -10,8 +10,7 @@ import streamlit as st
 from src.global_settings import STORAGE_PATH, FILES_PATH, CACHE_FILE
 from src.prompts import CUSTOM_SUMMARY_EXTRACT_TEMPLATE
 
-# Access the OpenAI API key
-openai.api_key = st.secrets["openai"]["OPENAI_API_KEY"]
+openai.api_key = st.secrets.openai.OPENAI_API_KEY
 Settings.llm = OpenAI(model="gpt-4o-mini", temperature=0.2)
 
 def ingest_documents():
