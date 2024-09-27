@@ -28,5 +28,7 @@ git clone https://github.com/username/hailugpt-chatbot.git
 
 ### Bước 2: Chạy streamlit 
 Gõ lệnh dưới đây vào terminal:
+
+```bash
 streamlit run chat.py
 ```
